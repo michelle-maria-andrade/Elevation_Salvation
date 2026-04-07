@@ -25,7 +25,7 @@ To clone this repository correctly, you **must** have Git LFS installed on your 
 
 3.  **Clone the Repo**:
     ```bash
-    git clone https://github.com/michelle-maria-andrade/Elevation_Salvation.git
+    git clone git@github.com:michelle-maria-andrade/Elevation_Salvation.git
     cd Elevation_Salvation
     ```
 
