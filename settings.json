@@ -1,96 +1,44 @@
 {
-  "SettingsVersion": 1.2,
-  "LogMessagesVisible": true,
-  "SimMode": "Multirotor",
-  "OriginGeopoint": {
-    "Latitude": 13.347742,
-    "Longitude": 74.792198,
-    "Altitude": 583
-  },
-  "WindowGeometry": {
-    "Width": 400,
-    "Height": 300,
-    "X": 50,
-    "Y": 50
-  },
-  "FullScreen": false,
-  "ViewMode": "FlyWithMe",
-
-  "Vehicles": {
-    "Copter": {
-      "VehicleType": "ArduCopter",
-      "UseSerial": false,
-      "LocalHostIp": "127.0.0.1",
-      "UdpIp": "127.0.0.1",
-      "UdpPort": 9003,
-      "ControlPort": 9002,
-      "AutoCreate": true,
-      "Sensors": {
-        "Imu": {
-          "SensorType": 2,
-          "Enabled": true
-        },
-        "Gps": {
-          "SensorType": 3,
-          "Enabled": true
-        },
-        "Lidar1": {
-          "SensorType": 6,
-          "Enabled": true,
-          "NumberOfChannels": 32,
-          "PointsPerSecond": 3600,
-          "X": 0,
-          "Y": 0,
-          "Z": -0.1,
-          "Roll": 0,
-          "Pitch": 0,
-          "Yaw": 0,
-          "DrawDebugPoints": true,
-          "RotationsPerSecond": 10,
-          "VerticalFOVUpper": 0,
-          "VerticalFOVLower": 0,
-          "HorizontalFOVStart": -180,
-          "HorizontalFOVEnd": 180,
-          "DataFrame": "SensorLocalFrame",
-          "ExternalController": true
-        }
-      },
-      "Cameras": {
-        "DownwardCamera": {
-          "CaptureSettings": [
-            {
-              "ImageType": 0,
-              "Width": 640,
-              "Height": 480,
-              "FOV_Degrees": 90,
-              "AutoExposureSpeed": 100,
-              "AutoExposureBias": 0,
-              "AutoExposureMaxBrightness": 0.64,
-              "AutoExposureMinBrightness": 0.03,
-              "MotionBlurAmount": 0,
-              "TargetGamma": 1.0
-            },
-            {
-              "ImageType": 1,
-              "Width": 640,
-              "Height": 480,
-              "FOV_Degrees": 90,
-              "AutoExposureSpeed": 100,
-              "AutoExposureBias": 0,
-              "AutoExposureMaxBrightness": 0.64,
-              "AutoExposureMinBrightness": 0.03,
-              "MotionBlurAmount": 0,
-              "TargetGamma": 1.0
-            }
-          ],
-          "X": 0,
-          "Y": 0,
-          "Z": 0,
-          "Pitch": -90,
-          "Roll": 0,
-          "Yaw": 0
+    "SettingsVersion": 1.2,
+    "SimMode": "Multirotor",
+    "OriginGeopoint": {
+      "Latitude": -35.363261,
+      "Longitude": 149.165230,
+      "Altitude": 583
+    },
+    "Vehicles": {
+      "Copter": {
+        "VehicleType": "ArduCopter",
+        "UseSerial": false,
+        "LocalHostIp": "127.0.0.1",
+        "UdpIp": "127.0.0.1",
+        "UdpPort": 9003,
+        "ControlPort": 9002,
+        "AutoCreate": true,
+        "Sensors": {
+          "Imu": {
+            "SensorType": 2,
+            "Enabled": true
+          },
+          "Gps": {
+            "SensorType": 3,
+            "Enabled": true
+          },
+          "Lidar1": {
+            "SensorType": 6,
+            "Enabled": true,
+            "NumberOfChannels": 32,
+            "PointsPerSecond": 20000,
+            "DrawDebugPoints": true,
+            "RotationsPerSecond": 10,
+            "VerticalFOVUpper": 225,
+            "VerticalFOVLower": 315,
+            "HorizontalFOVStart": 0,
+            "HorizontalFOVEnd": 359,
+            "DataFrame": "SensorLocalFrame",
+            "ExternalController": true
+          }
         }
       }
     }
   }
-}
